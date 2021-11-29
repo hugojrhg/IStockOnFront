@@ -1,0 +1,40 @@
+#lucro {
+  text-align: right;
+  align-self: right;
+  margin-left: 70%;
+}
+
+.sidenav-container {
+  height: 100%;
+  background-color: #def3fc;
+}
+
+.sidenav {
+  width: 175px;
+  box-shadow: 0 8px 12px 0 rgba(4, 3, 3, 0.2);
+}
+
+#titulo {
+  margin-left: 30px;
+  text-shadow: 0.1em 0.1em 0.2em rgba(19, 14, 14, 0.515);
+}
+
+.mat-list-item {
+  font-size: 14.8px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #0e76a8;
+  box-shadow: 0 8px 12px 0 rgba(4, 3, 3, 0.2);
+}
+
+.menu {
+  width: 300000000000px;
+}
