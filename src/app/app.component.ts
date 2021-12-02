@@ -12,7 +12,7 @@ import { ProdutoService } from './services/produto.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'dashboard';
+  title = 'IStockOn';
 
   produto = {} as Produto;
   produtos: Produto[];
