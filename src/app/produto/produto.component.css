@@ -177,10 +177,18 @@
       margin-right: 20px;
     }
   }
-  .col-sm-6 {
-    background-color: cornflowerblue;
-    width: 100%;
-  }
+    .col-sm-6 {
+      margin-left: 5%;
+      background-color: #def3fc;
+    }
+
+    .row mb-5 {
+      margin-right: 0%;
+    }
+
+    .mb-5 {
+      margin-right: 0%;
+    }
 
   
 
