@@ -13,10 +13,13 @@ export class ProdutoComponent implements OnInit {
   produto = {} as Produto;
   produtos: Produto[];
 
+  lucrototal: number;
+
   constructor(private produtoService: ProdutoService) { }
 
   ngOnInit() {
     this.getProdutos();
+    this.getLucro();
   }
 
   getProdutos() {
@@ -52,6 +55,13 @@ export class ProdutoComponent implements OnInit {
   public editProduto(produto: Produto) {
     this.produto = { ...produto };
   }
+
+  getLucro() {
+    this.produtoService.getLucro().subscribe((lucrototal: number) => {
+      this.lucrototal = lucrototal;
+    });
+  }
+
   // limpa o formulario
   cleanForm(form: NgForm) {
     this.getProdutos();
