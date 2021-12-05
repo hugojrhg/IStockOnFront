@@ -23,13 +23,6 @@
     flex: 1 1 auto;
   }
   
-  @media (max-width: 480px) { 
-    a {
-      font-size: medium;
-      margin-right: 20px;
-    }
-  }
-  
 .conteudo {
   width: 800px;
   height: auto;
@@ -127,8 +120,10 @@
   margin-top: -380px;
 }
 
-.parte-2 {
-  box-shadow: 0 8px 12px 0 rgba(4, 3, 3, 0.2);
+.line {
+  background-color: orange;
+  width: auto;
+  height: 3.5px;
 }
 
 .text-footer {
@@ -147,21 +142,30 @@
   padding-bottom: 80px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
   .mat-toolbar.mat-primary {
-    width: 400px;
+    width: auto;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    margin: 8px 40px 8px 8px;
+    font-size: medium;
+    color: aqua;
   }
   .conteudo {
-    width: 100%;
-    margin: 0px 50px 0px 50px;
-    padding-right: 20px;
+    width: auto;
+    margin: 0px 50px 50px 50px;
     padding: auto;
   }
   .conteudo-1 {
-    width: 100%;
-    margin: 0px 50px 0px 50px;
-    padding-bottom: 320px;
-    padding-right: 20px;
+    width: auto;
+    margin: 0px 50px 50px 50px;
+    padding-bottom: 390px;
+  }
+  .home-page {
+    width: auto;
+    height: auto;
   }
   .ilustration {
     display: none;
@@ -169,18 +173,58 @@
   .animation {
     display: none;
   }
-  .card-header {
-    margin-right: 20px;
-  }
+
   .patrocinadores {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
     margin-top: 30px;
-    margin-left: 140px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
+
   .text-footer {
-    margin-top: 200px;
-    margin-left: 100px;
+    width: auto;
+    height: auto;
+    margin-top: 28px;
   }
+
+  .logo {
+    margin-left: 5px;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-family: 'M PLUS Rounded 1c';
+    text-shadow: 0.1em 0.1em 0.2em rgba(19, 14, 14, 0.515);
+  }
+
+  .divisor {
+    margin-top: 12px;
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+
+  .conteudo h1 {
+    word-break: normal;
+    font-size: 25px;
+    margin-right: 25px;
+  }
+
+  .subtexto {
+    word-break: normal;
+    font-size: 100%;
+  }
+
+  .conteudo-1 h1 {
+    word-break: normal;
+    font-size: 25px;
+    margin-right: 25px;
+  }
+
+  .subtexto-1 {
+    word-break: normal;
+    font-size: 100%;
+  }
+
+  .senac {
+    padding-left: 80px;
+  }
+  
 }
