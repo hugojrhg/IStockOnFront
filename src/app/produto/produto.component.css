@@ -136,8 +136,8 @@
   }
 
   .card-box {
-    background-color: cornflowerblue;
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    box-shadow: 4px 8px 12px 8px rgba(28, 22, 22, 0.2);
+    background-color: aliceblue;
     border-radius: 1.2rem;
   }
 
@@ -145,8 +145,6 @@
     text-align: center;
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
-    border-radius: 0.8rem;
-    
   }
 
   .d-grip {
