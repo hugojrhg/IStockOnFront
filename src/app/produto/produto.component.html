@@ -3,38 +3,31 @@
   window.OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
     OneSignal.init({
-      appId: "f6df228c-e799-4ee7-841e-cc171a053cec",
+      appId: "7036d29a-aa4a-49bd-80a8-39dc17918e7f",
     });
   });
 </script>
 
 <head>
   <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-    </script>
+      function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+    if (display == "none")
+      document.getElementById(el).style.display = 'block';
+    else
+      document.getElementById(el).style.display = 'none';
+  }
+  </script>
 
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "f6df228c-e799-4ee7-841e-cc171a053cec",
-        });
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "7036d29a-aa4a-49bd-80a8-39dc17918e7f",
       });
-    </script>
+    });
+  </script>
 </head>
 
 <app-menu>
@@ -43,8 +36,8 @@
       <h1 class="card-title">Rendimento Atual: {{lucrototal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}}</h1>
     </div>
   </div>
-  <button type="button" class="collapsible">Adicionar Produto</button>
-  <div class="content">
+  <button type="button" onclick="Mudarestado('minhaDiv')">Adicionar Produto</button>
+  <div class="card-add-produto" style="display: none;">
     <h5 class="card-header">
       Adicionar/Atualizar Produtos
     </h5>
@@ -232,18 +225,11 @@
 </app-menu>
 
 <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
+  function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+    if (display == "none")
+      document.getElementById(el).style.display = 'block';
+    else
+      document.getElementById(el).style.display = 'none';
   }
   </script>
