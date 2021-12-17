@@ -143,29 +143,8 @@
 
   <div class="row mb-5">
     <div class="col-sm-6" *ngFor="let produto of produtos">
-      <div *ngIf="produto.quantidade - produto.vendidos < produto.quantidade/4">
-          <script>
-            OneSignal.sendSelfNotification(
-              /* Title (defaults if unset) */
-              "Aviso Produto Perto de Acabar",
-              /* Message (defaults if unset) */
-              "Um produto está acabando!", 
-              /* URL (defaults if unset) */
-              'https://istockon.herokuapp.com/produto',
-              /* Icon */
-              '',
-              [{ /* Buttons */
-                /* Choose any unique identifier for your button. The ID of the clicked button is passed to you so you can identify which button is clicked */
-                id: 'Ir',
-                /* The text the button should display. Supports emojis. */
-                text: 'Ver',
-                /* A valid publicly reachable URL to an icon. Keep this small because it's downloaded on each notification display. */
-                icon: '',
-                /* The URL to open when this action button is clicked. See the sections below for special URLs that prevent opening any window. */
-                url: 'https://istockon.herokuapp.com/produto'
-              }]
-            );
-          </script>
+      <div style="background-color: white;" *ngIf="produto.quantidade - produto.vendidos < produto.quantidade/4">
+          <span style="color: red;">O produto está acabando!!!</span>
       </div>
       <div class="card-box">
         <div class="card-corpo">
