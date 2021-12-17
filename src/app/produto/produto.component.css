@@ -165,10 +165,14 @@
     background-color: #def3fc;
   }
 
+<<<<<<< HEAD
   #show-or-hidde {
     margin-left: 600px;
     margin-top: 30px;
   }
+=======
+  
+>>>>>>> 2e6423fa680e3dbb136c4a0c72c32992f9abe454
 
   @media (max-width: 480px) { 
     .add-produto{

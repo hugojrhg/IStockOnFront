@@ -1,12 +1,69 @@
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "7036d29a-aa4a-49bd-80a8-39dc17918e7f",
+    });
+  });
+</script>
+
+<head>
+  <script>
+      function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+    if (display == "none")
+      document.getElementById(el).style.display = 'block';
+    else
+      document.getElementById(el).style.display = 'none';
+  }
+  </script>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "7036d29a-aa4a-49bd-80a8-39dc17918e7f",
+      });
+    });
+  </script>
+</head>
 
 <app-menu>
+<<<<<<< HEAD
   <div class="card-box-2">
+=======
+  <script>
+    function Mudarestado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
+</script>
+  <div class="card-box">
+>>>>>>> 2e6423fa680e3dbb136c4a0c72c32992f9abe454
     <div class="card-corpo">
       <h1 class="card-title">Rendimento Atual: {{lucrototal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}}</h1>
     </div>
   </div>
+<<<<<<< HEAD
   <input type="checkbox" id="show-or-hidde" [(ngModel)]="showhidepregnant"> Abrir ou fechar formulário
   <div class="card add-produto" *ngIf="showhidepregnant">
+=======
+  <script>
+    function Mudarestado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
+</script>
+  <div class="card add-produto">
+>>>>>>> 2e6423fa680e3dbb136c4a0c72c32992f9abe454
     <h5 class="card-header">
       Adicionar/Atualizar Produtos
     </h5>
@@ -144,6 +201,9 @@
 
   <div class="row mb-5">
     <div class="col-sm-6" *ngFor="let produto of produtos">
+      <div style="background-color: white;" *ngIf="produto.quantidade - produto.vendidos < produto.quantidade/4">
+          <span style="color: red;">O produto está acabando!!!</span>
+      </div>
       <div class="card-box">
         <div class="card-corpo">
           <h4 class="card-title">{{ produto.nome }}</h4>
@@ -189,3 +249,13 @@
     </div>
   </div>
 </app-menu>
+
+<script>
+  function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+    if (display == "none")
+      document.getElementById(el).style.display = 'block';
+    else
+      document.getElementById(el).style.display = 'none';
+  }
+  </script>
