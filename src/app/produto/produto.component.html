@@ -31,11 +31,29 @@
 </head>
 
 <app-menu>
+  <script>
+    function Mudarestado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
+</script>
   <div class="card-box">
     <div class="card-corpo">
       <h1 class="card-title">Rendimento Atual: {{lucrototal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}}</h1>
     </div>
   </div>
+  <script>
+    function Mudarestado(el) {
+  var display = document.getElementById(el).style.display;
+  if (display == "none")
+    document.getElementById(el).style.display = 'block';
+  else
+    document.getElementById(el).style.display = 'none';
+}
+</script>
   <button type="button" onclick="Mudarestado('minhaDiv')">Adicionar Produto</button>
   <div class="card-add-produto" style="display: none;">
     <h5 class="card-header">
