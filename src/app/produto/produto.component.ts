@@ -69,4 +69,6 @@ export class ProdutoComponent implements OnInit {
     this.produto = {} as Produto;
   }
 
+  showhidepregnant: true;
+
 }

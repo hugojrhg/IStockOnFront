@@ -60,4 +60,6 @@ export class FuncionarioComponent implements OnInit {
     this.funcionario = {} as Funcionario;
   }
 
+  showhidepregnant: true;
+
 }

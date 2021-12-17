@@ -1,8 +1,7 @@
 
 <app-menu>
-
-
-        <div class="card add-funcionario">
+        <input type="checkbox" id="show-or-hidde" [(ngModel)]="showhidepregnant"> Abrir ou fechar formulário
+        <div class="card add-funcionario" *ngIf="showhidepregnant">
           <h5 class="card-header">
             Adicionar/Atualizar Funcionários
           </h5>

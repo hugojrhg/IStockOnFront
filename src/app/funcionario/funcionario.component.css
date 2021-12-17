@@ -35,6 +35,10 @@
     background-color: #f2f2f2;
   }
 
+  .card {
+    display: block;
+  }
+
   #customers td,
   #customers th {
     border: 1px solid #ddd;
@@ -165,6 +169,11 @@
     background-color: #def3fc;
   }
 
+  #show-or-hidde {
+    margin-left: 600px;
+    margin-top: 30px;
+  }
+
   @media (max-width: 480px) { 
     .add-funcionario{
       width: 100%;
@@ -182,11 +191,18 @@
     .mb-5 {
       margin-right: 0%;
     }
+    #show-or-hidde {
+      margin-left: 80px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
   }
     .col-sm-6 { 
       background-color: #def3fc;
     }
 
+ 
   
 
 

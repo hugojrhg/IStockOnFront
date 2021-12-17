@@ -165,6 +165,11 @@
     background-color: #def3fc;
   }
 
+  #show-or-hidde {
+    margin-left: 600px;
+    margin-top: 30px;
+  }
+
   @media (max-width: 480px) { 
     .add-produto{
       width: 100%;
@@ -184,6 +189,11 @@
 
     .mb-5 {
       margin-right: 0%;
+    }
+    #show-or-hidde {
+      margin-left: 80px;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
     .col-sm-6 { 
