@@ -49,10 +49,7 @@
       <h1 class="card-title">Rendimento Atual: {{lucrototal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}}</h1>
     </div>
   </div>
-<<<<<<< HEAD
-  <input type="checkbox" id="show-or-hidde" [(ngModel)]="showhidepregnant"> Abrir ou fechar formulário
-  <div class="card add-produto" *ngIf="showhidepregnant">
-=======
+
   <script>
     function Mudarestado(el) {
   var display = document.getElementById(el).style.display;
@@ -62,8 +59,8 @@
     document.getElementById(el).style.display = 'none';
 }
 </script>
-  <div class="card add-produto">
->>>>>>> 2e6423fa680e3dbb136c4a0c72c32992f9abe454
+  <input type="checkbox" id="show-or-hidde" [(ngModel)]="showhidepregnant"> Abrir ou fechar formulário
+    <div class="card add-produto" *ngIf="showhidepregnant">
     <h5 class="card-header">
       Adicionar/Atualizar Produtos
     </h5>
